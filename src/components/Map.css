@@ -1,0 +1,9 @@
+.leaflet-container {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  min-height: 800px;
+  max-height: 1400px;
+}

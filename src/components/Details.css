@@ -1,0 +1,31 @@
+/* TuComponente.css */
+
+.info-section {
+  width: 60vh;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  z-index: 999;
+}
+
+.ip-address,
+.location,
+.timezone,
+.isp {
+  text-align: center;
+}
+
+h4 {
+  margin: 0;
+  font-size: xx-small;
+}
+
+span {
+  font-weight: bold;
+}
