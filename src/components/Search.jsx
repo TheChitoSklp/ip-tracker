@@ -41,20 +41,22 @@ export const Search = () => {
   return (
     <div className="componente-container">
       <img className="fondo-top" src={patternDesktop} alt="background" />
-      <h3>IP Address Tracker</h3>
-      <form className="search-container">
-        <input
-          className="search-input"
-          type="text"
-          placeholder="Escribe la dirección IP"
-          onChange={handleInputChange}
-        />
-        <button className="search-button" type="button" onClick={handleSend}>
-          <img src={logoBtn} alt="Search Button" />
-        </button>
-      </form>
-      {ipData && <Details ipData={ipData} />}
-      {ipData && <Map ipData={ipData} />}
+      <div className="form-content">
+        <h3>IP Address Tracker</h3>
+        <form className="search-container">
+          <input
+            className="search-input"
+            type="text"
+            placeholder="Escribe la dirección IP"
+            onChange={handleInputChange}
+          />
+          <button className="search-button" type="button" onClick={handleSend}>
+            <img src={logoBtn} alt="Search Button" />
+          </button>
+        </form>
+        {ipData && <Details ipData={ipData} />}
+      </div>
+      <div className="mapa">{ipData && <Map ipData={ipData} />}</div>
     </div>
   );
 };

@@ -1,10 +1,38 @@
+.componente-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.fondo-top {
+  grid-area: 1 / 1 / 3 / 6;
+}
+
+.mapa {
+  grid-area: 3 / 1 / 6 / 6;
+}
+
+.form-content {
+  grid-area: 1 / 2 / 4 / 5;
+}
+@media only screen and (max-width: 700px) {
+  .form-content {
+    grid-area: 1/2/5/5;
+  }
+}
 .search-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
 }
-
+.fondo-top {
+  width: 100%;
+  height: 100%;
+}
 .search-input {
   padding: 10px;
   font-size: 16px;
@@ -24,4 +52,12 @@
 
 .search-button:hover {
   background-color: #45a049;
+}
+
+.form-content {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
